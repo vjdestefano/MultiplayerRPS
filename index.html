@@ -19,6 +19,7 @@
   <!-- end of nav bar section -->
 
 
+  <button type="button" class="btn btn-primary col-3 btn-Q">Enter Queue</button>
   <div class="container">
     <div class="row">
       <div id="player1Choice" class="col-6">
@@ -46,10 +47,9 @@
     <div class="row">
       <div  id="chatWindow" class="col-12 pre-scrollable">
           <div data-spy="scroll" data-target="#chatWindow" data-offset="0" class="scrollspy-example">
-              <h4 id="verse1">Verse 1</h4>
-              <p>May <br> the <br> gods <br> forgive <br> me.</p>
-              <h4 id="verse2">Verse 2</h4>
-              <p>For <br> this <br> rampant <br> abuse <br> of <br> br-tags.</p>
+              
+              <p id="chatLog"></p>
+              
             </div>
       </div>
     </div>
@@ -60,9 +60,9 @@
       <div  id="chat" class="col-8">
         <div class="input-group">
           <div class="input-group-prepend">
-            <button class="btn btn-dark" type="button">Send</button>
+            <button id="submitMessage" class="btn btn-dark" type="button">Send</button>
           </div>
-          <input type="text" class="form-control " placeholder="Send your message here!" aria-label="" aria-describedby="basic-addon1">
+          <input id="messageCenter" type="text" class="form-control " placeholder="Send your message here!" aria-label="" aria-describedby="basic-addon1">
         </div>
       </div>
     </div>
@@ -78,6 +78,8 @@
 
 
     <script  src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
     <script src="multiRPS.js"></script>
   </head>
